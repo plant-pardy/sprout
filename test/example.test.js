@@ -1,3 +1,4 @@
+import { findById, getPlant, setPlant } from '../storage-utils.js';
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
@@ -16,3 +17,8 @@ test('time to test a function', (expect) => {
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
 });
+
+
+test('setPlant should set plant into local storage', (expect) => {
+    const expected = 
+})

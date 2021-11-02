@@ -6,12 +6,12 @@ export function findById(items, id){
     } 
 }
 
-export function setPlant(plantObject){
+export function setPlants(plantObject){
     const plantString = JSON.stringify(plantObject);
-    return localStorage.setItem('PLANT', plantString);
+    return localStorage.setItem('PLANTS', plantString);
 }
 
-export function getPlant(){
-    const plantString = localStorage.getItem('PLANT');
+export function getPlants(){
+    const plantString = localStorage.getItem('PLANTS');
     return JSON.parse(plantString);
 }
