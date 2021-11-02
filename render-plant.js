@@ -1,20 +1,21 @@
+import plants from '../plant-data.js';
 // plantObject
 // { 
 //     id: '1',
-//     name: 'Monstera',
+//     name: 'Swiss Cheese plant',
 //     img: './assets/plants/monstera.png',
-//     care: easy,
+//     care-level: 3,
 // }
 
-export function renderPlants(plant){
+export function renderPlant(plant){
     //create div for the individial plant called plantCard containing the three plant specs
     const plantCard = document.createElement('div');
     plantCard.classList.add('plant-card');
     
     //add plant name and care level to header to div
     const plantHeader = document.createElement('h2');
-    plantHeader.textContent = plant.name;
-    plantHeader.textContent = 'Care level: ' + plant.care;
+    plantHeader.textContent = 'common-name';
+    plantHeader.textContent = 'Care level: ' + 'care-level';
 
     //add plant image to div
     const img = document.createElement('img');
