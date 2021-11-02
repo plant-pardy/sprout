@@ -1,4 +1,3 @@
-import plants from '../plant-data.js';
 // plantObject
 // { 
 //     id: '1',
@@ -19,6 +18,7 @@ export function renderPlant(plants){
     plantHeader2.textContent = 'Care level: ' + plants['care-level'];
 
     //add plant image to div
+    //image is undefined in testing until images are in assets
     const img = document.createElement('img');
     img.src = plants.img;
 
@@ -26,7 +26,7 @@ export function renderPlant(plants){
     const addCheck = document.createElement('INPUT');
     addCheck.setAttribute('type', 'checkbox');
     addCheck.textContent = 'Pick Plant';
-    addCheck.id = plants.id;
+    addCheck.id = plants['id'];
     addCheck.classList.add('add-check');
 
     /*
