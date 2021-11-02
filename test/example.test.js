@@ -1,4 +1,4 @@
-import { findById, getPlant, setPlant } from '../storage-utils.js';
+import { findById, getPlants, setPlants } from '../storage-utils.js';
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
@@ -19,6 +19,27 @@ test('time to test a function', (expect) => {
 });
 
 
-test('setPlant should set plant into local storage', (expect) => {
-    const expected = 
-})
+test('setPlants should save plant objects into local storage', (expect) => {
+    localStorage.removeItem('PLANTS');
+    const expected = {
+        'id': 1,
+        'common-name': 'Swiss Cheese plant',
+        'genus': 'Monstera  Deliciosa',
+        'care-level': '3',
+        'family': 'Aracea',
+        'plant-type': 'Tropical, climbing evergreen',
+        'mature-size': '3 ft. tall',
+        'sun-exposure': 'Bright indirect sunlight, partial shade',
+        'soil-type': 'Peat based potting soil, well drained',
+        'soil-pH': 'acid or neutral',
+        'bloom-time': 'Mid-summer',
+        'native-area': 'Central America',
+        'propagation': 'Yes',
+        'toxicity': 'Toxic to cats and dogs ',
+    };
+    setPlants(expected);
+    const actualString = localStorage.getItem('PLANTS');
+    const actual = JSON.parse(actualString);
+    expect.deepEqual(actual, expected);
+
+});
