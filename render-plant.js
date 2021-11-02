@@ -1,32 +1,30 @@
-import plants from '../plant-data.js';
 // plantObject
 // { 
 //     id: '1',
-//     name: 'Swiss Cheese plant',
+//     name: 'Monstera',
 //     img: './assets/plants/monstera.png',
-//     care-level: 3,
+//     care: easy,
 // }
 
-export function renderPlant(plants){
+export function renderPlants(plant){
     //create div for the individial plant called plantCard containing the three plant specs
     const plantCard = document.createElement('div');
     plantCard.classList.add('plant-card');
     
     //add plant name and care level to header to div
     const plantHeader = document.createElement('h2');
-    plantHeader.textContent = plants['common-name'];
-    const plantHeader2 = document.createElement('h2');
-    plantHeader2.textContent = 'Care level: ' + plants['care-level'];
+    plantHeader.textContent = plant.name;
+    plantHeader.textContent = 'Care level: ' + plant.care;
 
     //add plant image to div
     const img = document.createElement('img');
-    img.src = plants.img;
+    img.src = plant.img;
 
     //add an add plant checkbox to div
     const addCheck = document.createElement('INPUT');
     addCheck.setAttribute('type', 'checkbox');
     addCheck.textContent = 'Pick Plant';
-    addCheck.id = plants.id;
+    addCheck.id = plant.id;
     addCheck.classList.add('add-check');
 
     /*
@@ -37,6 +35,6 @@ export function renderPlant(plants){
     */
 
     //append all the above to the div called plantCard
-    plantCard.append(plantHeader, plantHeader2, addCheck, img);
+    plantCard.append(plantHeader, addCheck, img);
     return plantCard;
 }

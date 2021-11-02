@@ -4,7 +4,7 @@ export default [
         'id': 1,
         'common-name': 'Swiss Cheese plant',
         'genus': 'Monstera  Deliciosa',
-        'care-level': 3,
+        'care-level': '3',
         'family': 'Aracea',
         'plant-type': 'Tropical, climbing evergreen',
         'mature-size': '3 ft. tall',
