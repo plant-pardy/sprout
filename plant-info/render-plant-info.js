@@ -17,16 +17,21 @@ export function renderInfo(plantObject) {
     //      textContent = element.value
     //      tr.append (th, td)
     //      table.append (tr)
-    const table = document.getElementById('table-body');
-    let iterator = 0
+    const renderPlants = document.getElementById('render-plants');
+
     for (let key in plantObject) {
         const tr = document.createElement('tr');
         const th = document.createElement('th');
         th.textContent = String(key);
         const td = document.createElement('td');
-        td.textContent = Object.values(plantObject);
-
+        td.textContent = plantObject[key];
+        //console.log(td.textContent);
+        //console.log(th.textContent);
+        tr.append(th, td);
+        renderPlants.append(tr);
     }
+
+    return renderPlants;
 
     //get the number of times the for loop runs
 
