@@ -1,7 +1,9 @@
 * {
-    border: 1px solid black;
+    border: 1px solid lightgray;
 }
 
 body {
     text-align: center;
+    width: fit-content;
+    margin: auto;
 }

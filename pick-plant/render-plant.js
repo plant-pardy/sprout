@@ -16,14 +16,15 @@ export function renderPlant(plants){
     plantHeader.textContent = plants['common-name'];
     const plantHeader2 = document.createElement('h2');
     plantHeader2.textContent = 'Care level: ' + plants['care-level'];
-
+    
     //add plant image to div
     //plants.img needs to be changed to bracket notation
     const img = document.createElement('img');
     img.src = plants.img;
 
+
     //add an add plant checkbox to div
-    const addCheck = document.createElement('INPUT');
+    const addCheck = document.createElement('input');
     addCheck.setAttribute('type', 'checkbox');
     addCheck.textContent = 'Pick Plant';
     addCheck.id = plants.id;
@@ -37,6 +38,6 @@ export function renderPlant(plants){
     */
 
     //append all the above to the div called plantCard
-    plantCard.append(plantHeader, plantHeader2, addCheck, img);
+    plantCard.append(plantHeader, addCheck, img, plantHeader2);
     return plantCard;
 }
