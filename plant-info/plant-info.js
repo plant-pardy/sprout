@@ -1,5 +1,5 @@
 import { renderInfo } from './render-plant-info.js';
-import plantData from '../plant-data.js';
+import plants from '../plant-data.js';
 import * as su from '../storage-utils.js';
 
 // get elements for DOM
@@ -7,7 +7,7 @@ const swapButton = document.getElementById('swap-button');
 
 // retrieve localStorage
 
-su.setPlants(plantData[0]); // TEMPORARY: create placeholder localStorage
+su.setPlants(plants[0]); // TEMPORARY: create placeholder localStorage
 
 // store user's plants from localStorage for rendering
 const userPlants = [su.getPlants()]; 
