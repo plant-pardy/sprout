@@ -1,1 +1,27 @@
 /* add home page styles here */
+
+/* MOBILE DEVICES: */
+@media only screen and (min-width: 400px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw; /* temporary value to reduce to phone size */
+    }
+
+    button {
+        max-width: fit-content;
+        margin: auto
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+}

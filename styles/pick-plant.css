@@ -1,1 +1,18 @@
 /* add pick-plant/... page styles here */
+
+header, p, footer {
+    width: fit-content;
+    margin: auto;
+}
+
+#render-plants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.plant-card {
+    width: 10vw;
+    word-wrap: break-word;
+    max-width: 200px;
+}

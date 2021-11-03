@@ -6,13 +6,6 @@ import { renderPlant } from './render-plant.js';
 const renderPlants = document.getElementById('render-plants');
 const submit = document.getElementById('submit');
 
-
-// HEADER ====================================== 
-// includes app name and team name
-
-// MAIN ========================================
-// display "click on up to 3 plants, then submit"
-
 plants.forEach(plant => {
     // append to section "render-plants" cards to display minimal plant data (vertically):
     //      plant common-name
@@ -37,7 +30,7 @@ submit.addEventListener('click', () => {
     //      store checked items into localStorage
     //      send user to ../plant-info
 
-    if (selected.length === 0) {
+    if (selected.length < 1) {
         window.alert('Choose at least 1 plant!');
     } else if (selected.length > 3) {
         window.alert('easy there, gard\'ner - pick up to 3 plants');
