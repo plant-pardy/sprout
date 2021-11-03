@@ -1,6 +1,7 @@
 import { findById, getPlants, setPlants } from '../storage-utils.js';
 import plants from '../plant-data.js';
 import { renderPlant } from '../render-plant.js';
+import { renderInfo } from '../plant-info/render-plant-info.js';
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
@@ -102,5 +103,12 @@ test('findById should return item from plant-data array with matching id', (expe
         'toxicity': 'Toxic to cats and dogs ',
     };
     const actual = findById(plants, 1);
+    expect.deepEqual(actual, expected);
+});
+
+test('renderInfo should return an HTML snippet', (expect) => {
+    const expected = `<tr><td>Swiss Cheese plant</td><td>Monstera  Deliciosa</td><td>3</td><td>Aracea</td><td>Tropical, climbing evergreen</td><td>3 ft. tall</td><td>Bright indirect sunlight, partial shade</td><td>Peat based potting soil, well drained</td><td>acid or neutral</td><td>Mid-summer</td><td>Central America</td><td>Yes</td><td>Toxic to cats and dogs </td></tr>`;   
+    const actual = renderInfo(plants[0]).outerHTML;
+
     expect.deepEqual(actual, expected);
 });
