@@ -8,7 +8,6 @@ su.setPlants(plantData[0]); // TEMPORARY: create placeholder localStorage
 
 // store user's plants from localStorage for rendering
 const userPlants = [su.getPlants()]; 
-console.log(userPlants);
 
 // get table body from HTML
 const tbody = document.getElementById('table-body');
