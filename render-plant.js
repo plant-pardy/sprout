@@ -18,6 +18,7 @@ export function renderPlant(plants){
     plantHeader2.textContent = 'Care level: ' + plants['care-level'];
 
     //add plant image to div
+    //plants.img needs to be changed to bracket notation
     const img = document.createElement('img');
     img.src = plants.img;
 
