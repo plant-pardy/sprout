@@ -4,11 +4,12 @@ import { renderPlant } from './render-plant.js';
 
 // grab elements for the DOM
 const renderPlants = document.getElementById('render-plants');
+const submit = document.getElementById('submit');
 
-// HEADER 
+// HEADER ====================================== 
 // includes app name and team name
 
-// MAIN
+// MAIN ========================================
 // display "click on up to 3 plants, then submit"
 
 plants.forEach(plant => {
@@ -20,3 +21,15 @@ plants.forEach(plant => {
     renderPlants.append(newCard);
 });
 
+submit.addEventListener('click', () => {
+    // use querySelectorAll to get all checked input boxes
+    // if checked boxes === 0, then
+    //      alert "pick at least one plant"
+    // else if checked boxes > 3, then
+    //      alert "easy there, gard'ner - only 3 plants" 
+    // else
+    //      store checked items into localStorage
+    //      send user to ../plant-info
+
+    window.location.replace('../plant-info/');
+});
