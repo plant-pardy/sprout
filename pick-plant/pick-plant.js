@@ -6,6 +6,7 @@ import { renderPlant } from './render-plant.js';
 const renderPlants = document.getElementById('render-plants');
 const submit = document.getElementById('submit');
 
+
 // HEADER ====================================== 
 // includes app name and team name
 
@@ -23,7 +24,11 @@ plants.forEach(plant => {
 
 submit.addEventListener('click', () => {
     // store count of all checked input boxes using querySelectorAll 
+    const selected = document.querySelectorAll('input:checked');
 
+    // CHECKBOX LOGIC
+    // ===============================================================
+    //
     // if checked boxes === 0, then
     //      alert "pick at least one plant"
     // else if checked boxes > 3, then
@@ -32,5 +37,16 @@ submit.addEventListener('click', () => {
     //      store checked items into localStorage
     //      send user to ../plant-info
 
-    window.location.replace('../plant-info/');
+    if (selected.length === 0) {
+        window.alert('Choose at least 1 plant!');
+    } else if (selected.length > 3) {
+        window.alert('easy there, gard\'ner - pick up to 3 plants');
+    } else {
+        console.log(selected);
+        // window.location.replace('../plant-info/');
+    }
+
+    // ===============================================================
+
+
 });
