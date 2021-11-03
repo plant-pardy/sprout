@@ -47,6 +47,5 @@ export function renderInfo(plantData) {
         tdType, tdSize, tdExposure, tdSoil, tdPh, tdBloom, 
         tdNative, tdProp, tdToxic);
 
-    console.log(tr);
     return tr;
 }
