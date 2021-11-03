@@ -22,7 +22,8 @@ plants.forEach(plant => {
 });
 
 submit.addEventListener('click', () => {
-    // use querySelectorAll to get all checked input boxes
+    // store count of all checked input boxes using querySelectorAll 
+
     // if checked boxes === 0, then
     //      alert "pick at least one plant"
     // else if checked boxes > 3, then
