@@ -1,5 +1,6 @@
 import plants from '../plant-data.js';
 import { renderPlant } from './render-plant.js';
+import { setPlants } from '../storage-utils.js';
 // import { getPlants, setPlants, findById } from '../storage-utils.js';
 
 // grab elements for the DOM
@@ -40,6 +41,6 @@ submit.addEventListener('click', () => {
     }
 
     // ===============================================================
-
-
+    setPlants(plants.id);
+//console.log(plants.id);
 });
