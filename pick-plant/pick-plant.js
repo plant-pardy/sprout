@@ -42,8 +42,8 @@ submit.addEventListener('click', () => {
     } else if (selected.length > 3) {
         window.alert('easy there, gard\'ner - pick up to 3 plants');
     } else {
-        console.log(selected);
-        // window.location.replace('../plant-info/');
+        // console.log(selected); --USE TO CHECK FOR INPUTS
+        window.location.replace('../plant-info/');
     }
 
     // ===============================================================
