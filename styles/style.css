@@ -9,3 +9,7 @@ body {
     width: fit-content;
     margin: auto;
 }
+
+header {
+    font-family: 'Fredoka One', cursive;
+}

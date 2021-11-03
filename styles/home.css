@@ -3,11 +3,11 @@
 /* COLOR PALETTE 1 - uncomment for swapping palette  */
 
 :root { 
-    --lighter: #EFF1F3
-    --light: #74A27C
-    --med: #D8B4A0
-    --dark: #523C2C
-    --darker: #0D4315
+    --lighter: #EFF1F3;
+    --light: #74A27C;
+    --med: #D8B4A0;
+    --dark: #523C2C;
+    --darker: #0D4315;
 
     --forest-green-crayola: #74a27cff;
     --forest-green-traditional: #0d4315ff;
@@ -39,11 +39,25 @@
         flex-direction: column;
         justify-content: top;
         align-items: center;
+        margin: 10%;
+        background-color: var(--light);
+    }
+    header {
+        background-color: white;
+    }
+
+    .hidden {
+        display: none;
     }
 
     main {
         display: flex;
         flex-direction: column;
+    }
+
+    p {
+        min-width: 200px;
+
     }
 
     button {
