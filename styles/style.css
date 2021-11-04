@@ -15,6 +15,8 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
+    background-color: var(--light);
+    color: var(--lighter);
 }
 
 #social > img {
@@ -28,4 +30,10 @@ footer {
     position: sticky;
     bottom: 0;
     width: 100%;
+    background-color: var(--light);
+    color: var(--lighter);
+}
+
+.hidden {
+    display: none;
 }
