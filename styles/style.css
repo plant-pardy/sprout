@@ -13,3 +13,7 @@ body {
 header {
     font-family: 'Fredoka One', cursive;
 }
+
+#social {
+padding: 3%;
+}
