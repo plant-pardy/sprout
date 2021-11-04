@@ -12,6 +12,9 @@ body {
 
 header {
     font-family: 'Fredoka One', cursive;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 #social > img {
