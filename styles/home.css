@@ -67,21 +67,23 @@
         min-zoom: 0.25;
         max-zoom: 5;
     } */
-}
+
     main {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 200;
     }
         
         p {
         width: 250px;
-        margin: 20px 0px 50px 0px;
+        margin: 20px 0px 20px 0px;
     }
 
     button {
-        max-width: fit-content;
+        /* max-width: fit-content; */
         margin: auto;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 200;
@@ -89,6 +91,7 @@
         border-radius: 3px;
         padding: 2.8%;
         font-size: 80%;
+        width: 50%;
     }
 
     #pick-plants {
@@ -103,11 +106,24 @@
 
     footer {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 200;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+
         /* position: fixed; not quite finished positioning the footer correctly, comin back to this -adria & jordan
         /* bottom: 0; */
+    }
+
+    #social {
+        display: flex;
+        justify-content: center;
+
     }
 }
 
