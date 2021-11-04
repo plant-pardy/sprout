@@ -1,27 +1,19 @@
 import { renderInfo } from './render-plant-info.js';
-import plants from '../plant-data.js';
 import * as su from '../storage-utils.js';
 
 // get elements for DOM
 const swapButton = document.getElementById('swap-button');
+const renderPlants = document.getElementById('render-plants');
 
-// retrieve localStorage
-
-su.setPlants(plants[0]); // TEMPORARY: create placeholder localStorage
-
-// store user's plants from localStorage for rendering
-const userPlants = [su.getPlants()]; 
-
-// get table body from HTML
-const tbody = document.getElementById('table-body');
+const userPlants = su.getPlants(); 
 
 // for each plant in the user's localStorage (array), 
-//      use renderInfo to create a table row
-//      append child table row to table body
+//      use renderInfo to create a table
+//      append child table to table body
 
 userPlants.forEach(plant => {
-    const tr = renderInfo(plant);
-    tbody.appendChild(tr);      // can we display table row information vertically???
+    const newPlant = renderInfo(plant);
+    renderPlants.appendChild(newPlant); 
 });
 
 swapButton.addEventListener('click', () => {

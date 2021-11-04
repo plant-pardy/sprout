@@ -20,14 +20,14 @@ export function renderPlant(plants){
     //add plant image to div
     //plants.img needs to be changed to bracket notation
     const img = document.createElement('img');
-    img.src = plants.img;
+    img.src = plants['img'];
 
 
     //add an add plant checkbox to div
     const addCheck = document.createElement('input');
     addCheck.setAttribute('type', 'checkbox');
     addCheck.textContent = 'Pick Plant';
-    addCheck.id = plants.id;
+    addCheck.id = plants['id'];
     addCheck.classList.add('add-check');
 
     /*
