@@ -36,7 +36,7 @@ test('setPlants should save plant objects into local storage', (expect) => {
         'sun-exposure': 'Bright indirect sunlight, partial shade',
         'soil-type': 'Peat based potting soil, well drained',
         'soil-pH': 'acid or neutral',
-        'bloom-time': 'Mid-summer',
+        'growing-season': 'Mid-summer',
         'native-area': 'Central America',
         'propagation': 'Yes',
         'toxicity': 'Toxic to cats and dogs ',
@@ -60,7 +60,7 @@ test('getPlants should return plant objects from local storage', (expect) => {
         'sun-exposure': 'Bright indirect sunlight, partial shade',
         'soil-type': 'Peat based potting soil, well drained',
         'soil-pH': 'acid or neutral',
-        'bloom-time': 'Mid-summer',
+        'growing-season': 'Mid-summer',
         'native-area': 'Central America',
         'propagation': 'Yes',
         'toxicity': 'Toxic to cats and dogs ',
@@ -80,10 +80,11 @@ test('findById should return item from plant-data array with matching id', (expe
         'family': 'Aracea',
         'plant-type': 'Tropical, climbing evergreen',
         'mature-size': '3 ft. tall',
+        'water': 'Regular waterings during growing season every one to two weeks. During fall and winter only water occasionally. It is important for the soil to dry out slightly between waterings. ',
         'sun-exposure': 'Bright indirect sunlight, partial shade',
         'soil-type': 'Peat based potting soil, well-drained',
         'soil-pH': 'Acidic or neutral',
-        'bloom-time': 'Mid-summer',
+        'growing-season': 'Mid-summer',
         'native-area': 'Central America',
         'propagation': 'Yes',
         'toxicity': 'Toxic to cats and dogs.',
@@ -93,7 +94,7 @@ test('findById should return item from plant-data array with matching id', (expe
 });
 
 test('renderInfo should return an HTML snippet', (expect) => {
-    const expected = `<div class="plant-card"><img src="../assets/plant-images/monstera-deliciosa.jpg"><table><tr><th>common-name</th><td>Swiss Cheese plant</td></tr><tr><th>genus</th><td>Monstera  Deliciosa</td></tr><tr><th>care-level</th><td>3</td></tr><tr><th>family</th><td>Aracea</td></tr><tr><th>plant-type</th><td>Tropical, climbing evergreen</td></tr><tr><th>mature-size</th><td>3 ft. tall</td></tr><tr><th>sun-exposure</th><td>Bright indirect sunlight, partial shade</td></tr><tr><th>soil-type</th><td>Peat based potting soil, well-drained</td></tr><tr><th>soil-pH</th><td>Acidic or neutral</td></tr><tr><th>bloom-time</th><td>Mid-summer</td></tr><tr><th>native-area</th><td>Central America</td></tr><tr><th>propagation</th><td>Yes</td></tr><tr><th>toxicity</th><td>Toxic to cats and dogs.</td></tr></table></div>`;  
+    const expected = `<div class="plant-card"><img src="../assets/plant-images/monstera-deliciosa.jpg"><table><tr><th>common-name</th><td>Swiss Cheese plant</td></tr><tr><th>genus</th><td>Monstera  Deliciosa</td></tr><tr><th>care-level</th><td>3</td></tr><tr><th>family</th><td>Aracea</td></tr><tr><th>plant-type</th><td>Tropical, climbing evergreen</td></tr><tr><th>mature-size</th><td>3 ft. tall</td></tr><tr><th>water</th><td>Regular waterings during growing season every one to two weeks. During fall and winter only water occasionally. It is important for the soil to dry out slightly between waterings. </td></tr><tr><th>sun-exposure</th><td>Bright indirect sunlight, partial shade</td></tr><tr><th>soil-type</th><td>Peat based potting soil, well-drained</td></tr><tr><th>soil-pH</th><td>Acidic or neutral</td></tr><tr><th>growing-season</th><td>Mid-summer</td></tr><tr><th>native-area</th><td>Central America</td></tr><tr><th>propagation</th><td>Yes</td></tr><tr><th>toxicity</th><td>Toxic to cats and dogs.</td></tr></table></div>`;  
     const actual = renderInfo(plants[0]).outerHTML;
 
     expect.deepEqual(actual, expected);
