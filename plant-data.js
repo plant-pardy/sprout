@@ -21,7 +21,7 @@ export default [
     {
         'id': 2,
         'img': '../assets/plant-images/rubber-radiator-plant.jpg', 
-        'common-name': 'Baby Rubber Plant/Radiator Plant',
+        'common-name': 'Radiator Plant',
         'genus': 'Peperomia',
         'care-level': 2,
         'family': 'Piperacea',
@@ -345,7 +345,7 @@ export default [
     {
         'id': 20,
         'img': '../assets/plant-images/air-plant-tillandsia.jpg',
-        'common-name': 'Air plant',
+        'common-name': 'Air Plant',
         'genus': 'Tillandsia',
         'care-level': 1,
         'family': 'Bromaleiaceae',
@@ -363,7 +363,7 @@ export default [
     {
         'id': 21,
         'img': '../assets/plant-images/air-plant-xerographica.jpg',
-        'common-name': 'Air Plant',
+        'common-name': 'Air Plant - Xerographica',
         'genus': 'Tillandsia Xerographica',
         'care-level': 1,
         'family': 'Bromaleiaceae',
@@ -507,7 +507,7 @@ export default [
     {
         'id': 29,
         'img': '../assets/plant-images/white-fusion.jpg',
-        'common-name': 'Calathea White Fusion',
+        'common-name': 'White Fusion',
         'genus': 'Calathea Lietzei',
         'care-level': 3,
         'family': 'Marantaceae',
