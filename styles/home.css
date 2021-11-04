@@ -39,35 +39,70 @@
         flex-direction: column;
         justify-content: top;
         align-items: center;
-        margin: 10%;
+        margin: 15%;
         background-color: var(--light);
+        color: var(--lighter);
     }
-    header {
-        background-color: white;
+    h1 {
+        /* background-color: var(--lighter); */
+        font-size: 400%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 80%;
+    }
+
+    h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;
     }
 
     .hidden {
-        display: none;
-    }
+        display: none; 
+    }  
 
     main {
         display: flex;
         flex-direction: column;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;
     }
 
     p {
-        min-width: 200px;
+        width: 200px;
+        margin: 50px 0px 50px 0px;
 
     }
 
     button {
         max-width: fit-content;
-        margin: auto
+        margin: auto;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;
+        border: none;
+        border-radius: 3px;
+        padding: 2.8%;
+        font-size: 80%;
+    }
+
+    #pick-plants {
+        background-color: var(--darker);
+        color: var(--lighter);
+        margin-bottom: 2%;
+    }
+
+    #plant-info {
+        color: var(--darker);
     }
 
     footer {
         display: flex;
         justify-content: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;
+        /* position: fixed; not quite finished positioning the footer correctly, comin back to this -adria & jordan
+        /* bottom: 0; */
     }
 }
 
@@ -89,3 +124,4 @@
         border: 1px solid red;
     }
 } 
+

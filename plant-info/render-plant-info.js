@@ -17,7 +17,7 @@ export function renderInfo(plantObject) {
     //          textContent = Plant Object key  
     //          create HTML element td - this is our value
     //          textContent = PlantObject[key]
-    //          tr.append (th, td)
+    //   tr.append (th, td)
     //          table.append (tr)
     //      else if key is img, then
     //          create HTML element img

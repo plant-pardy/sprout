@@ -8,7 +8,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -18,15 +18,21 @@
 
 <body>
     <header>
-        <h1 id="app-name" class="hidden">sprout</h1>
-        <h2 id="team-name" class="hidden">from [TEAM NAME]</h2>
-        <img src="./assets/sprout-logo-250.png" alt="sprout logo">
+        <h1 id="app-name">sprout</h1>
+        <h2 id="team-name">from [TEAM NAME]</h2>
+        <img class ="hidden" src="./assets/sprout-logo-250.png" alt="sprout logo">
     </header>
 
     <main>
-        <p>This is a decscription of our app: what it does, who it's for, and why we hope you'll download it.</p> <!-- About section -->
+        <p id="about"><br>New to buying plants but don't know where to start?</br>
 
-        <button id="pick-plants">Pick plants</button> <!-- this button is directs to pick-plants/ for new and existing users -->
+            <br>Sprout makes it easy for novice plant owners to determine which plants to bring home. 
+            To get started, choose up to three plants from our large library of low-maintenance plants. 
+            Once the plant selection is complete, easy-to-understand details about each plant will be given. 
+            This makes it easy to decide which plant is a compatible fit for you!</br>
+            
+        <br>Do you know which plants best fit you?</br></p> <!-- About section -->
+        <button id="pick-plants">Find some plants</button> <!-- this button is directs to pick-plants/ for new and existing users -->
 
         <button id="plant-info">View your plants</button> <!-- this button is directs to plant-info/ for existing users -->
     </main>
