@@ -20,7 +20,7 @@ export default [
     },
     {
         'id': 2,
-        'img': '../assets/plant-images/rubber-radiator-plant.jpg', 
+        'img': '../assets/plant-images/radiator-plant.jpg', 
         'common-name': 'Radiator Plant',
         'genus': 'Peperomia',
         'care-level': 2,
@@ -362,7 +362,7 @@ export default [
     },
     {
         'id': 21,
-        'img': '../assets/plant-images/air-plant-xerographica.jpg',
+        'img': '../assets/plant-images/xerographica.jpg',
         'common-name': 'Air Plant - Xerographica',
         'genus': 'Tillandsia Xerographica',
         'care-level': 1,
@@ -380,7 +380,7 @@ export default [
     },
     {
         'id': 22,
-        'img': '../assets/plant-images/elephants-ear.jpg',
+        'img': '../assets/plant-images/elephant-ear.jpg',
         'common-name': 'Elephant Ear',
         'genus': 'Alocasia Macrorrhiza',
         'care-level': 2,
@@ -470,7 +470,7 @@ export default [
     },
     {
         'id': 27,
-        'img': '../assets/plant-images/dragon-scale-plant.jpg',
+        'img': '../assets/plant-images/dragon-scale.jpg',
         'common-name': 'Dragon Scale Plant',
         'genus': 'Alocasia Baginda  ',
         'care-level': 2,
