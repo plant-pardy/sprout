@@ -14,6 +14,8 @@ header {
     font-family: 'Fredoka One', cursive;
 }
 
-#social {
-padding: 3%;
+#social > img {
+width: 12%;
+padding: 1%;
+margin-top: 25px;
 }

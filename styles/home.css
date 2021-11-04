@@ -61,18 +61,23 @@
     .hidden {
         display: none; 
     }  
-
+    
+    /* @viewport {
+        width: extend-to-zoom 980px;
+        min-zoom: 0.25;
+        max-zoom: 5;
+    } */
+}
     main {
         display: flex;
         flex-direction: column;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 200;
     }
-
-    p {
-        width: 200px;
-        margin: 50px 0px 50px 0px;
-
+        
+        p {
+        width: 250px;
+        margin: 20px 0px 50px 0px;
     }
 
     button {
