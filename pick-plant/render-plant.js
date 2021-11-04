@@ -28,7 +28,7 @@ export function renderPlant(plants){
     addCheck.setAttribute('type', 'checkbox');
     addCheck.textContent = 'Pick Plant';
     addCheck.id = plants['id'];
-    addCheck.classList.add('add-check');
+    addCheck.classList.add('add-check hidden');
 
     /*
     const addButton = document.createElement('button');
