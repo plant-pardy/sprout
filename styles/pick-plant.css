@@ -56,10 +56,18 @@
         word-wrap: break-word;
         width: 40%;
         font-family: 'Source Sans Pro', sans-serif;
+        background-color: var(--lighter);
+        border-radius: 20px;
+    }
+
+    .plant-card > h2 {
+        font-size: 80%;
     }
 
     img {
         width: 50%;
+        border: 3px solid var(--light);
+        border-radius: 10px;
     }
 
     button {
@@ -68,6 +76,7 @@
         font-family: 'Source Sans Pro', sans-serif;
     }
 
+    
 }
 
 @media only screen and (min-width: 600px) {
