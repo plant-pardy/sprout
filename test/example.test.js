@@ -94,6 +94,7 @@ test('findById should return item from plant-data array with matching id', (expe
         'family': 'Aracea',
         'plant-type': 'Tropical, climbing evergreen',
         'mature-size': '3 ft. tall',
+        'water': 'Regular waterings during growing season every one to two weeks. During fall and winter only water occasionally. It is important for the soil to dry out slightly between waterings. ',
         'sun-exposure': 'Bright indirect sunlight, partial shade',
         'soil-type': 'Peat based potting soil, well-drained',
         'soil-pH': 'Acidic or neutral',

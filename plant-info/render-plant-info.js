@@ -20,6 +20,9 @@ export function renderInfo(plantData) {
     const tdSize = document.createElement('td');
     tdSize.textContent = plantData['mature-size'];
     
+    const tdWater = document.createElement('td');
+    tdWater.textContent = plantData['water'];
+
     const tdExposure = document.createElement('td');
     tdExposure.textContent = plantData['sun-exposure'];
     
@@ -29,8 +32,8 @@ export function renderInfo(plantData) {
     const tdPh = document.createElement('td');
     tdPh.textContent = plantData['soil-pH'];
     
-    const tdBloom = document.createElement('td');
-    tdBloom.textContent = plantData['bloom-time'];
+    const tdGrow = document.createElement('td');
+    tdGrow.textContent = plantData['growing-season'];
     
     const tdNative = document.createElement('td');
     tdNative.textContent = plantData['native-area'];
@@ -44,7 +47,7 @@ export function renderInfo(plantData) {
 
 
     tr.append(tdName, tdGenus, tdCare, tdFamily, 
-        tdType, tdSize, tdExposure, tdSoil, tdPh, tdBloom, 
+        tdType, tdSize, tdExposure, tdSoil, tdPh, tdGrow, 
         tdNative, tdProp, tdToxic);
 
     return tr;
