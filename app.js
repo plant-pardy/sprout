@@ -1,10 +1,7 @@
 // import functions and grab DOM elements
-import { setPlants, getPlants } from 'storage-utils.js';
-import plants from './plant-data.js';
-// import { getPlants, setPlants, findById } from './storage-utils.js';
-
 const button1 = document.getElementById('pick-plants');
 const button2 = document.getElementById('plant-info');
+
 // initialize global state
 
 // set event listeners 
