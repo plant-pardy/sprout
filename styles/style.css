@@ -1,3 +1,5 @@
+/* GENERIC STYLING FOR ALL PAGES */
+
 * {
     border: 1px solid lightgray;
 }
@@ -6,4 +8,8 @@ body {
     text-align: center;
     width: fit-content;
     margin: auto;
+}
+
+header {
+    font-family: 'Fredoka One', cursive;
 }
