@@ -1,6 +1,5 @@
 //rendering all table elements for plant-info page
 export function renderInfo(plantObject) {
-    // grab the section 'render-plants' from HTML
     // create a container with class 'plant-card'
     // create a table to hold table rows, headers, and data
     // display an image at the top of the card, then
@@ -29,7 +28,6 @@ export function renderInfo(plantObject) {
     // append plantCard to render-plants
     // return render-plants
 
-    const renderPlants = document.getElementById('render-plants');
     const plantCard = document.createElement('div');
     const table = document.createElement('table');
 
@@ -52,8 +50,7 @@ export function renderInfo(plantObject) {
     }
 
     plantCard.appendChild(table);
-    renderPlants.appendChild(plantCard);
 
-    return renderPlants;
+    return plantCard;
 
 }
