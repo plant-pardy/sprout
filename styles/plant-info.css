@@ -46,10 +46,16 @@
         flex-direction: column;
     }
 
+    img { 
+        max-width: 400px;
+        justify-self: center;
+    }
+
     button {
         max-width: fit-content;
         margin: auto
     }
+
 
     footer {
         display: flex;
