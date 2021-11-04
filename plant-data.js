@@ -20,6 +20,7 @@ export default [
     },
     {
         'id': 2,
+        'img': '', 
         'common-name': 'Baby Rubber Plant/Radiator Plant',
         'genus': 'Peperomia',
         'care-level': 2,
@@ -37,6 +38,7 @@ export default [
     },
     {
         'id': 3,
+        'img': '',
         'common-name': 'Philodendron',
         'genus': 'Philodendron',
         'care-level': 1,
@@ -54,6 +56,7 @@ export default [
     },
     {
         'id': 4,
+        'img': '',
         'common-name': 'Chinese Evergreen',
         'genus': 'Aglanoema Commutatum',
         'care-level': 1,
@@ -71,6 +74,7 @@ export default [
     },
     {
         'id': 5,
+        'img': '',
         'common-name': 'ZZ Plant',
         'genus': 'Zamioculcas zamiifolia',
         'care-level': 1,
@@ -88,6 +92,7 @@ export default [
     },
     {
         'id': 6,
+        'img': '',
         'common-name': 'Aloe Vera',
         'genus': 'Aloe Barbadensis Miller',
         'care-level': 1,
@@ -105,6 +110,7 @@ export default [
     },
     {
         'id': 7,
+        'img': '',
         'common-name': 'Money Tree',
         'genus': 'Pachira Aquatica',
         'care-level': 1,
@@ -122,6 +128,7 @@ export default [
     },
     {
         'id': 8,
+        'img': '',
         'common-name': 'Peace Lily',
         'genus': 'Spathiphyllum',
         'care-level': 2,
@@ -139,6 +146,7 @@ export default [
     },
     {
         'id': 9,
+        'img': '',
         'common-name': 'Pothos',
         'genus': 'Epipremnum Aureum',
         'care-level': 1,
@@ -156,6 +164,7 @@ export default [
     },
     {
         'id': 10,
+        'img': '',
         'common-name': 'Rubber Plant',
         'genus': 'Ficus Elastica',
         'care-level': 2,
@@ -173,6 +182,7 @@ export default [
     },
     {
         'id': 11,
+        'img': '',
         'common-name': 'String of Hearts',
         'genus': 'Ceropegia Woodii',
         'care-level': 2,
@@ -190,6 +200,7 @@ export default [
     },
     {
         'id': 12,
+        'img': '',
         'common-name': 'Snake Plant',
         'genus': 'Dracaena Trifasciata',
         'care-level': 1,
@@ -207,6 +218,7 @@ export default [
     },
     {
         'id': 13,
+        'img': '',
         'common-name': 'Aloe Tiki Zilla',
         'genus': 'Aloe',
         'care-level': 1,
@@ -224,6 +236,7 @@ export default [
     },
     {
         'id': 14,
+        'img': '',
         'common-name': 'Jade Plant',
         'genus': 'Crassula',
         'care-level': 1,
@@ -241,6 +254,7 @@ export default [
     },
     {
         'id': 15,
+        'img': '',
         'common-name': 'Chinese Money Plant',
         'genus': 'Pilea peperomioides',
         'care-level': 2,
@@ -258,6 +272,7 @@ export default [
     },
     {
         'id': 16,
+        'img': '',
         'common-name': 'Corn Plant',
         'genus': 'Dracaena Fragrans',
         'care-level': 2,
@@ -275,6 +290,7 @@ export default [
     },
     {
         'id': 17,
+        'img': '',
         'common-name': 'Birds Nest Fern',
         'genus': 'Asplenium Nidus',
         'care-level': 3,
@@ -292,6 +308,7 @@ export default [
     },
     {
         'id': 18,
+        'img': '',
         'common-name': 'Ponytail Palm',
         'genus': 'Beaucarnea Recurvata',
         'care-level': 1,
@@ -309,6 +326,7 @@ export default [
     },
     {
         'id': 19,
+        'img': '',
         'common-name': 'Rattlesnake Plant',
         'genus': 'Calathea Lancifolia',
         'care-level': 3,
@@ -326,6 +344,7 @@ export default [
     },
     {
         'id': 20,
+        'img': '',
         'common-name': 'Air plant',
         'genus': 'Tillandsia',
         'care-level': 1,
@@ -343,6 +362,7 @@ export default [
     },
     {
         'id': 21,
+        'img': '',
         'common-name': 'Air Plant',
         'genus': 'Tillandsia Xerographica',
         'care-level': 1,
@@ -360,6 +380,7 @@ export default [
     },
     {
         'id': 22,
+        'img': '',
         'common-name': 'Elephant Ear',
         'genus': 'Alocasia Macrorrhiza',
         'care-level': 2,
@@ -377,6 +398,7 @@ export default [
     },
     {
         'id': 23,
+        'img': '',
         'common-name': 'Lucky Bamboo',
         'genus': 'Dracaena Sanderiana',
         'care-level': 1,
@@ -394,6 +416,7 @@ export default [
     },
     {
         'id': 24,
+        'img': '',
         'common-name': 'Cocoon Plant',
         'genus': 'Senecio Haworthii Mont Blanc',
         'care-level': 1,
@@ -411,6 +434,7 @@ export default [
     },
     {
         'id': 25,
+        'img': '',
         'common-name': 'Friends',
         'genus': 'Sansevieria Kirkii',
         'care-level': 1,
@@ -428,6 +452,7 @@ export default [
     },
     {
         'id': 26,
+        'img': '',
         'common-name': 'Green Ti Plant',
         'genus': 'Cordyline Fruticosa Glauca ',
         'care-level': 3,
@@ -445,6 +470,7 @@ export default [
     },
     {
         'id': 27,
+        'img': '',
         'common-name': 'Dragon Scale Plant',
         'genus': 'Alocasia Baginda  ',
         'care-level': 2,
@@ -462,6 +488,7 @@ export default [
     },
     {
         'id': 28,
+        'img': '',
         'common-name': 'Silver Satin Pothos',
         'genus': 'Scindapsus Pictus',
         'care-level': 1,
@@ -479,6 +506,7 @@ export default [
     },
     {
         'id': 29,
+        'img': '',
         'common-name': 'Calathea White Fusion',
         'genus': 'Calathea Lietzei',
         'care-level': 3,
@@ -496,6 +524,7 @@ export default [
     },
     {
         'id': 30,
+        'img': '',
         'common-name': 'Umbrella Plant',
         'genus': 'Schefflera',
         'care-level': 2,
