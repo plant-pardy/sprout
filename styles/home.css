@@ -93,11 +93,12 @@
         font-size: 80%;
         width: 50%;
     }
-
+    
     #pick-plants {
         background-color: var(--darker);
         color: var(--lighter);
         margin-bottom: 2%;
+        margin-top: 15%;
     }
 
     #plant-info {
