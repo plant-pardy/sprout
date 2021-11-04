@@ -39,11 +39,11 @@
         flex-direction: column;
         justify-content: top;
         align-items: center;
+        background-color: var(--forest-green-crayola);
     }
 
-    header, p, footer {
-        width: fit-content;
-        margin: auto;
+    p {
+        font-family: 'Source Sans Pro', sans-serif;
     }
     
     #render-plants {
@@ -54,16 +54,18 @@
     
     .plant-card {
         word-wrap: break-word;
-        width: 200px;
+        width: 40%;
+        font-family: 'Source Sans Pro', sans-serif;
     }
 
     img {
-        width: 200px;
+        width: 50%;
     }
 
     button {
         max-width: fit-content;
-        margin: auto
+        margin: auto;
+        font-family: 'Source Sans Pro', sans-serif;
     }
 
 }
