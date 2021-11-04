@@ -57,6 +57,10 @@
         width: 200px;
     }
 
+    img {
+        width: 200px;
+    }
+
     button {
         max-width: fit-content;
         margin: auto

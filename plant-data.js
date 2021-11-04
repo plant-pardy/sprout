@@ -2,7 +2,7 @@
 export default [
     {
         'id': 1,
-        'img': 'plant-app/assets/plant-images/monstera-deliciosa.jpg',
+        'img': '../assets/plant-images/monstera-deliciosa.jpg',
         'common-name': 'Swiss Cheese plant',
         'genus': 'Monstera  Deliciosa',
         'care-level': 3,
