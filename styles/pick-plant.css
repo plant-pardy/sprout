@@ -39,11 +39,11 @@
         flex-direction: column;
         justify-content: top;
         align-items: center;
+        background-color: var(--forest-green-crayola);
     }
 
-    header, p, footer {
-        width: fit-content;
-        margin: auto;
+    p {
+        font-family: 'Source Sans Pro', sans-serif;
     }
     
     #render-plants {
@@ -53,18 +53,29 @@
     }
     
     .plant-card {
-        word-wrap: break-word;
-        width: 200px;
+        overflow-wrap: anywhere;
+        width: 40%;
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: var(--lighter);
+        border-radius: 20px;
+    }
+
+    .plant-card > h2 {
+        font-size: 80%;
     }
 
     img {
-        width: 200px;
+        width: 50%;
+        border: 3px solid var(--light);
+        border-radius: 10px;
     }
 
     button {
         max-width: fit-content;
-        margin: auto
+        margin: auto;
+        font-family: 'Source Sans Pro', sans-serif;
     }
+
 
 }
 
