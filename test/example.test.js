@@ -11,7 +11,7 @@ test('renderPlant should return an HTML snippet', (expect) => {
     //Arrange
     // Set up your arguments and expectations
 
-    const expected = `<div class="plant-card"><h2>Swiss Cheese plant</h2><input type="checkbox" id="1" class="add-check"><img src="../assets/plant-images/monstera-deliciosa.jpg"><h2>Care level: 3</h2></div>`;
+    const expected = `<div class="plant-card"><h2>Swiss Cheese plant</h2><input type="checkbox" id="1" class="add-check hidden"><img src="../assets/plant-images/monstera-deliciosa.jpg"><h2>Care level: 3</h2></div>`;
     const SwissCheesePlant = plants[0];
     //Act 
     // Call the function you're testing and set the result to a const

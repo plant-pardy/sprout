@@ -1,8 +1,8 @@
 /* GENERIC STYLING FOR ALL PAGES */
 
-* {
+/* * {
     border: 1px solid lightgray;
-}
+} */
 
 body {
     text-align: center;
@@ -12,8 +12,28 @@ body {
 
 header {
     font-family: 'Fredoka One', cursive;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--light);
+    color: var(--lighter);
 }
 
-#social {
-padding: 3%;
+#social > img {
+    width: 12%;
+    padding: 1%;
+    margin-top: 25px;
+}
+
+footer {
+    font-family: 'Fredoka One', cursive;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--light);
+    color: var(--lighter);
+}
+
+.hidden {
+    display: none;
 }

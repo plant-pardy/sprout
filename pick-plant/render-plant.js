@@ -29,6 +29,7 @@ export function renderPlant(plants){
     addCheck.textContent = 'Pick Plant';
     addCheck.id = plants['id'];
     addCheck.classList.add('add-check');
+    addCheck.classList.add('hidden');
 
     /*
     const addButton = document.createElement('button');
