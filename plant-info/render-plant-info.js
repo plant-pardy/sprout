@@ -1,11 +1,9 @@
-//rendering all table elements for plant-info page
 export function renderInfo(plantObject) {
 
     const plantCard = document.createElement('div');
     const header = document.createElement('h2');
     const img = document.createElement('img');
     const table = document.createElement('table');
-
 
     plantCard.classList.add('plant-card');
 
@@ -31,31 +29,3 @@ export function renderInfo(plantObject) {
     return plantCard;
 
 }
-
-    // create a container with class 'plant-card'
-    // create a table to hold table rows, headers, and data
-    // display an image at the top of the card, then
-    // create a 2-column table
-    //      key on left
-    //      value on right
-    // 15 key/value pairs
-    //      keys are headers <th>
-    //      values are data <td>
-    
-    // for each key in plantData -
-    //      if key is NOT image and NOT ID, then
-    //          create HTML element tr 
-    //          create HTML element th - this is our key
-    //          textContent = Plant Object key  
-    //          create HTML element td - this is our value
-    //          textContent = PlantObject[key]
-    //   tr.append (th, td)
-    //          table.append (tr)
-    //      else if key is img, then
-    //          create HTML element img
-    //          add img src attribute
-    //          append to container 'plant-card'
-    //
-    // append table to plantCard
-    // append plantCard to render-plants
-    // return render-plants

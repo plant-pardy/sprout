@@ -1,6 +1,4 @@
-/* add plant-info/... page styles here */
-
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) { /* Smartphone styling */
 
     #app-name {
         width: 60%;
@@ -10,7 +8,6 @@
 
     .plant-card {
         margin: 5%;
-        /* border: 10px solid var(--light); */
         border-radius: 10px;
     }
     
@@ -19,6 +16,12 @@
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 800;
         text-transform: capitalize;
+    }
+
+    .plant-card > img { 
+        max-width: 70%;
+        justify-self: center;
+        border-radius: 20px;
     }
     
     body {
@@ -41,6 +44,9 @@
         flex-direction: column;
     }
 
+    table {
+        margin: 5%;
+    }
 
     th, td {
         font-family: 'Source Sans Pro', sans-serif;
@@ -75,28 +81,61 @@
         margin-top: 4%;
     }
 
-    img { 
-        max-width: 70%;
-        justify-self: center;
-        border-radius: 20px;
-        padding: 5%;
-    }
-
     footer {
         padding-top: 8%;
     }
 
 }
 
-@media only screen and (min-width: 600px) {
-    * {
-        border: 1px solid blue;
+@media only screen and (min-width: 768px) { /* Desktop/tablet styling */
+    #app-name {
+        max-width: 300px;
     }
-}
 
-  /* For desktop: */
-@media only screen and (min-width: 768px) {
-    * {
-        border: 1px solid red;
+    #render-plants {
+        gap: 20px;
+    }
+
+    #social > img {
+        padding: 0.3%;
+    }
+
+    .plant-card > h2 {
+        color: var(--dark);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 800;
+        text-transform: capitalize;
+        font-size: 200%;
+    }
+
+    body {
+        width: auto;
+    }
+
+    table {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    th, td {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 100%;
+        color: var(--dark);
+        text-align: left;
+    }
+
+    p {
+        font-size: 150%;
+        text-align: center;
+    }
+
+    button {
+        font-size: 100%;
+        width: 20%;
+        padding: 1.5%;
+    }
+
+    footer {
+        padding-top: 4%;
     }
 } 
