@@ -106,9 +106,10 @@
 }
 
 input[type=checkbox]:checked + img {
-    border: 3px solid red;
+    border: 3px solid #EFF1F3;
     border-radius: 10%;
     background-color:white;
+    filter: drop-shadow(0 0 1.5rem #0D4315);
 }
 
 
