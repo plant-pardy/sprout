@@ -48,6 +48,17 @@ header {
     color: var(--lighter);
 }
 
+button {
+    margin: 3%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    padding: 5%;
+    font-size: 75%;
+    width: 80%;
+}
+
 footer {
     font-family: 'Fredoka One', cursive;
     position: sticky;

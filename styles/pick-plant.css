@@ -76,7 +76,17 @@
         font-size: 80%;
     }
     
+    label > h2 {
+        font-size: 80%;
+    }
+
+    input[type=checkbox]:checked + img {
+        border: 3px solid var(--dark);
+        border-radius: 10%;
+        background-color:white;
+    }
 }
+
 
 @media only screen and (min-width: 600px) {
     * {
