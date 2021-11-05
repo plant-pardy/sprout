@@ -5,36 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Fonts -->
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/pick-plant.css">
-    <title>Choose Plants</title>
+    <title>Sprout: Choose Plants</title>
 </head>
 
 <body>
     <header>
-        <h1 id="app-name">sprout</h1>
-        <h2 id="team-name">from [TEAM NAME]</h2>
+        <a href="../"><img src="../assets/sprout-logo-white.png" id="app-name"></a>
+        <p>select up to 3 plants</p>
     </header>
 
     <main>
-        <p>click on up to 3 plants, then choose submit</p>
-        <hr>
-        <section id="render-plants">
-            <!-- list of all plants will be rendered through plant-info.js here -->
-        </section>
-        <hr>
-        <button id="submit">Submit</button>
+        <section id="render-plants"></section>
     </main>
     
     <footer>
-        <!-- replace with a list of images for social media icons -->
-        <h3>a place for social media icons, and maybe our personal stamp</h3>
+        <button id="submit">Choose Plants</button>
+
+        <div id="social">
+            <img src="..\assets\SocialMediaLogos\face-logo.png">
+            <img src="..\assets\SocialMediaLogos\insta-logo.png">
+            <img src="..\assets\SocialMediaLogos\email2-logo.png">
+            <img src="..\assets\SocialMediaLogos\link-logo.png">
+            <img src="..\assets\SocialMediaLogos\twit-logo.png">
+            <img src="..\assets\SocialMediaLogos\you-logo.png">
+        </div>
+
+        <h2>© Sprout App 2021</h2>
     </footer>
 
     <script type="module" src="./pick-plant.js"></script>

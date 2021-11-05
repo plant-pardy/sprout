@@ -1,44 +1,42 @@
-/* add plant-info/... page styles here */
+@media only screen and (min-width: 320px) { /* Smartphone styling */
 
-/* COLOR PALETTE 1 - uncomment for swapping palette  */
+    #app-name {
+        width: 60%;
+        padding-right: 5%;
+        margin: 0;
+    }
 
-:root { 
-    --lighter: #EFF1F3;
-    --light: #74A27C;
-    --med: #D8B4A0;
-    --dark: #523C2C;
-    --darker: #0D4315;
+    .plant-card {
+        margin: 5%;
+        border-radius: 10px;
+    }
+    
+    .plant-card > h2 {
+        color: var(--dark);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 800;
+        text-transform: capitalize;
+    }
 
-    --forest-green-crayola: #74a27cff;
-    --forest-green-traditional: #0d4315ff;
-    --cultured: #eff1f3ff;
-    --cafe-noir: #523c2cff;
-    --desert-sand: #d4b4a0ff;
-}
-
-/* COLOR PALETTE 2 - uncomment for swapping palette */
-
-/* :root { 
-    --lighter: #EFF1F3
-    --light: #BA7043
-    --med: #99A69A
-    --dark: #523C2C
-    --darker: #0D4315
-
-    --cultured: #EFF1F3
-    --brown-sugar: #BA7043
-    --morning-blue: #99A69A
-    --cafe-noir: #523C2C
-    --forest-green-traditional: #0D4315
-} */
-
-
-@media only screen and (min-width: 320px) {
+    .plant-card > img { 
+        max-width: 70%;
+        justify-self: center;
+        border-radius: 20px;
+    }
+    
     body {
         display: flex;
         flex-direction: column;
         justify-content: top;
         align-items: center;
+        background-color: var(--lighter);
+    }
+
+    p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 800;
+        font-size: 5vw;
+        margin-top: 0;
     }
 
     main {
@@ -46,38 +44,98 @@
         flex-direction: column;
     }
 
-    img { 
-        max-width: 400px;
-        justify-self: center;
+    table {
+        margin: 5%;
+    }
+
+    th, td {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 90%;
+        color: var(--dark);
+        text-align: left;
+    }
+
+    th {
+        text-transform: capitalize;
+        font-weight: 600;
+        padding: 0.5%;
+    }
+
+    td {
+        padding-left: 2%;
+        font-weight: 400;
     }
 
     button {
-        max-width: fit-content;
-        margin: auto
+        margin: auto;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+        border: none;
+        border-radius: 3px;
+        padding: 3%;
+        font-size: 80%;
+        width: 40%;
+        background-color: var(--darker);
+        color: var(--lighter);
+        margin-bottom: 4%;
+        margin-top: 4%;
     }
-
 
     footer {
-        display: flex;
-        justify-content: center;
+        padding-top: 8%;
     }
+
 }
 
-@media only screen and (min-width: 600px) {
-    * {
-        border: 1px solid blue;
+@media only screen and (min-width: 768px) { /* Desktop/tablet styling */
+    #app-name {
+        max-width: 300px;
+    }
+
+    #render-plants {
+        gap: 20px;
+    }
+
+    #social > img {
+        padding: 0.3%;
+    }
+
+    .plant-card > h2 {
+        color: var(--dark);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 800;
+        text-transform: capitalize;
+        font-size: 200%;
     }
 
     body {
-        text-align: center;
-        width: fit-content;
-        margin: auto;
+        width: auto;
     }
-}
 
-  /* For desktop: */
-@media only screen and (min-width: 768px) {
-    * {
-        border: 1px solid red;
+    table {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    th, td {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 100%;
+        color: var(--dark);
+        text-align: left;
+    }
+
+    p {
+        font-size: 150%;
+        text-align: center;
+    }
+
+    button {
+        font-size: 100%;
+        width: 20%;
+        padding: 1.5%;
+    }
+
+    footer {
+        padding-top: 4%;
     }
 } 

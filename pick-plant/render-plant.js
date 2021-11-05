@@ -1,43 +1,43 @@
-// plantObject
-// { 
-//     id: '1',
-//     name: 'Swiss Cheese plant',
-//     img: './assets/plants/monstera.png',
-//     care-level: 3,
-// }
-
 export function renderPlant(plants){
-    //create div for the individial plant called plantCard containing the three plant specs
+
+    const clickCard = document.createElement('label');
+    clickCard.setAttribute('name', 'click-card');
+
     const plantCard = document.createElement('div');
     plantCard.classList.add('plant-card');
 
-    //add plant name and care level to header to div
-    const plantHeader = document.createElement('h2');
-    plantHeader.textContent = plants['common-name'];
-    const plantHeader2 = document.createElement('h2');
-    plantHeader2.textContent = 'Care level: ' + plants['care-level'];
+    const plantName = document.createElement('h2');
+    plantName.textContent = plants['common-name'];
+
+    const plantCare = document.createElement('h3');
+    switch (plants['care-level']) {
+        case 1:
+            plantCare.textContent = 'Care level: easiest';
+            break;
+        case 2:
+            plantCare.textContent = 'Care level: easier';
+            break;
+        case 3: 
+            plantCare.textContent = 'Care level: easy';
+            break;
+        default: 
+            plantCare.textContent = `Care level: ${plants['care-level']}`;
+            break;
+    }
     
-    //add plant image to div
-    //plants.img needs to be changed to bracket notation
     const img = document.createElement('img');
     img.src = plants['img'];
 
-
-    //add an add plant checkbox to div
     const addCheck = document.createElement('input');
+    addCheck.setAttribute('name', 'click-card');
     addCheck.setAttribute('type', 'checkbox');
     addCheck.textContent = 'Pick Plant';
     addCheck.id = plants['id'];
-    addCheck.classList.add('add-check hidden');
+    addCheck.classList.add('add-check');
+    addCheck.classList.add('hidden');
 
-    /*
-    const addButton = document.createElement('button');
-    addButton.textContent = 'Pick Plant';
-    addButton.id = plant.id;
-    addButton.classList.add('add-button');
-    */
-
-    //append all the above to the div called plantCard
-    plantCard.append(plantHeader, addCheck, img, plantHeader2);
+    clickCard.append(plantName, addCheck, img, plantCare);
+    plantCard.append(clickCard);
+    
     return plantCard;
 }

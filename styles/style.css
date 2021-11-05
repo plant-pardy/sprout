@@ -1,13 +1,20 @@
-/* GENERIC STYLING FOR ALL PAGES */
+:root { 
+    --lighter: #EFF1F3;
+    --light: #74A27C;
+    --med: #D8B4A0;
+    --dark: #523C2C;
+    --darker: #0D4315;
 
-/* * {
-    border: 1px solid lightgray;
-} */
+    --forest-green-crayola: #74a27cff;
+    --forest-green-traditional: #0d4315ff;
+    --cultured: #eff1f3ff;
+    --cafe-noir: #523c2cff;
+    --desert-sand: #d4b4a0ff;
+}
 
 body {
     text-align: center;
     width: fit-content;
-    margin: auto;
 }
 
 header {
@@ -19,10 +26,15 @@ header {
     color: var(--lighter);
 }
 
-#social > img {
-    width: 12%;
-    padding: 1%;
-    margin-top: 25px;
+button {
+    margin: 3%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    padding: 5%;
+    font-size: 75%;
+    width: 80%;
 }
 
 footer {
@@ -34,6 +46,19 @@ footer {
     color: var(--lighter);
 }
 
+footer > h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 80%;
+}
+
 .hidden {
     display: none;
+}
+
+#social > img {
+    max-width: 50px;
+    width: 12%;
+    padding: 1%;
+    border-radius: 25%;
 }
