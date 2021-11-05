@@ -1,43 +1,39 @@
 /* add pick-plant/... page styles here */
 
-/* COLOR PALETTE 1 - uncomment for swapping palette  */
-
-:root { 
-    --lighter: #EFF1F3;
-    --light: #74A27C;
-    --med: #D8B4A0;
-    --dark: #523C2C;
-    --darker: #0D4315;
-
-    --forest-green-crayola: #74a27cff;
-    --forest-green-traditional: #0d4315ff;
-    --cultured: #eff1f3ff;
-    --cafe-noir: #523c2cff;
-    --desert-sand: #d4b4a0ff;
-}
-
-/* COLOR PALETTE 2 - uncomment for swapping palette */
-
-/* :root { 
-    --lighter: #EFF1F3
-    --light: #BA7043
-    --med: #99A69A
-    --dark: #523C2C
-    --darker: #0D4315
-
-    --cultured: #EFF1F3
-    --brown-sugar: #BA7043
-    --morning-blue: #99A69A
-    --cafe-noir: #523C2C
-    --forest-green-traditional: #0D4315
-} */
-
-
 @media only screen and (min-width: 320px) {
 
     #app-name {
-        width: 40%;
+        width: 60%;
         padding-right: 5%;
+    }
+
+    #render-plants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--med);
+        padding: 10px;
+    }
+    
+    .plant-card {
+        overflow-wrap: anywhere;
+        width: 40%;
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: var(--lighter);
+        border-radius: 20px;
+    }
+    
+    .plant-card > h2 {
+        color: var(--dark);
+        font-size: 70%;
+        font-weight: 700;
+    }
+
+    .plant-card > h3 {
+        color: var(--dark);
+        font-size: 80%;
+        font-weight: 600;
     }
     
     body {
@@ -50,6 +46,9 @@
 
     p {
         font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 800;
+        font-size: 5vw;
+        margin-top: 0;
     }
 
     img {
@@ -61,12 +60,12 @@
     button {
         margin: auto;
         font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 200;
+        font-weight: 600;
         border: none;
         border-radius: 3px;
-        padding: 2.8%;
+        padding: 3%;
         font-size: 80%;
-        width: 30%;
+        width: 40%;
         background-color: var(--darker);
         color: var(--lighter);
         margin-bottom: 2%;
@@ -77,38 +76,11 @@
         font-size: 80%;
     }
     
-    .plant-card {
-        overflow-wrap: anywhere;
-        width: 40%;
-        font-family: 'Source Sans Pro', sans-serif;
-        background-color: var(--lighter);
-        border-radius: 20px;
-    }
-    
-    .plant-card > h2 {
-        font-size: 80%;
-    }
-
-    #render-plants {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        background-color: var(--med);
-        padding: 10px;
-    }
 }
 
 @media only screen and (min-width: 600px) {
     * {
         border: 1px solid blue;
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: top;
-        align-items: center;
     }
 }
 
@@ -118,10 +90,4 @@
         border: 1px solid red;
     }
 
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: top;
-        align-items: center;
-    }
 } 

@@ -57,6 +57,12 @@ footer {
     color: var(--lighter);
 }
 
+footer > h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 80%;
+}
+
 .hidden {
     display: none;
 }
