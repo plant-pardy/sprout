@@ -1,13 +1,42 @@
 /* GENERIC STYLING FOR ALL PAGES */
 
+:root { 
+    --lighter: #EFF1F3;
+    --light: #74A27C;
+    --med: #D8B4A0;
+    --dark: #523C2C;
+    --darker: #0D4315;
+
+    --forest-green-crayola: #74a27cff;
+    --forest-green-traditional: #0d4315ff;
+    --cultured: #eff1f3ff;
+    --cafe-noir: #523c2cff;
+    --desert-sand: #d4b4a0ff;
+}
+
+/* COLOR PALETTE 2 - uncomment for swapping palette */
+
+/* :root { 
+    --lighter: #EFF1F3
+    --light: #BA7043
+    --med: #99A69A
+    --dark: #523C2C
+    --darker: #0D4315
+
+    --cultured: #EFF1F3
+    --brown-sugar: #BA7043
+    --morning-blue: #99A69A
+    --cafe-noir: #523C2C
+    --forest-green-traditional: #0D4315
+} */
+
 /* * {
-    border: 1px solid lightgray;
+    border: 1px solid red;
 } */
 
 body {
     text-align: center;
     width: fit-content;
-    margin: auto;
 }
 
 header {
@@ -17,12 +46,6 @@ header {
     width: 100%;
     background-color: var(--light);
     color: var(--lighter);
-}
-
-#social > img {
-    width: 12%;
-    padding: 1%;
-    margin-top: 25px;
 }
 
 footer {
@@ -37,3 +60,7 @@ footer {
 .hidden {
     display: none;
 }
+
+#social > img {
+    width: 12%;
+    padding: 1%;}
