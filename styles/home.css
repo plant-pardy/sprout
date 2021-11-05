@@ -1,72 +1,55 @@
 /* add home page styles here */
 
-/* COLOR PALETTE 1 - uncomment for swapping palette  */
-
-:root { 
-    --lighter: #EFF1F3;
-    --light: #74A27C;
-    --med: #D8B4A0;
-    --dark: #523C2C;
-    --darker: #0D4315;
-
-    --forest-green-crayola: #74a27cff;
-    --forest-green-traditional: #0d4315ff;
-    --cultured: #eff1f3ff;
-    --cafe-noir: #523c2cff;
-    --desert-sand: #d4b4a0ff;
-}
-
-/* COLOR PALETTE 2 - uncomment for swapping palette */
-
-/* :root { 
-    --lighter: #EFF1F3
-    --light: #BA7043
-    --med: #99A69A
-    --dark: #523C2C
-    --darker: #0D4315
-
-    --cultured: #EFF1F3
-    --brown-sugar: #BA7043
-    --morning-blue: #99A69A
-    --cafe-noir: #523C2C
-    --forest-green-traditional: #0D4315
-} */
-
 /* MOBILE DEVICES: */
 @media only screen and (min-width: 320px) {
+
+    #app-name {
+        width: 100%;
+        padding-right: 5%;
+        height: auto;
+    }
+
+    #buttons {
+        margin: 5%;
+    }
+
+    #pick-plants {
+        background-color: var(--darker);
+        color: var(--lighter);
+    }
+
+    #plant-info {
+        color: var(--darker);
+    }
+
+    #social {
+        display: flex;
+        justify-content: center;
+    }
+
     body {
         display: flex;
         flex-direction: column;
         justify-content: top;
         align-items: center;
-        margin: 15%;
         background-color: var(--light);
         color: var(--lighter);
     }
+
+    header {
+        padding: 0;
+    }
+
     h1 {
-        /* background-color: var(--lighter); */
         font-size: 400%;
         margin: 0 auto;
     }
 
     h2 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
         font-size: 80%;
     }
-
-    h3 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 200;
-    }
-
-    .hidden {
-        display: none; 
-    }  
-    
-    /* @viewport {
-        width: extend-to-zoom 980px;
-        min-zoom: 0.25;
-        max-zoom: 5;
-    } */
 
     main {
         display: flex;
@@ -75,34 +58,24 @@
         align-items: center;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 200;
+        max-width: 75%;
     }
         
     p {
-        width: 250px;
-        margin: 20px 0px 20px 0px;
+        width: 100%;
+        font-size: 5vw;
+        margin-bottom: 5%;
     }
 
     button {
-        /* max-width: fit-content; */
-        margin: auto;
+        margin: 3%;
         font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 200;
+        font-weight: 500;
         border: none;
         border-radius: 3px;
-        padding: 2.8%;
-        font-size: 80%;
-        width: 50%;
-    }
-    
-    #pick-plants {
-        background-color: var(--darker);
-        color: var(--lighter);
-        margin-bottom: 2%;
-        margin-top: 15%;
-    }
-
-    #plant-info {
-        color: var(--darker);
+        padding: 5%;
+        font-size: 75%;
+        width: 80%;
     }
 
     footer {
@@ -116,27 +89,13 @@
         bottom: 0;
         width: 100%;
         text-align: center;
-
-        /* position: fixed; not quite finished positioning the footer correctly, comin back to this -adria & jordan
-        /* bottom: 0; */
     }
 
-    #social {
-        display: flex;
-        justify-content: center;
-
-    }
 }
 
 @media only screen and (min-width: 600px) {
     * {
         border: 1px solid blue;
-    }
-
-    body {
-        text-align: center;
-        width: fit-content;
-        margin: auto;
     }
 }
 

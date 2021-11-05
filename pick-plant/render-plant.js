@@ -7,6 +7,9 @@
 // }
 
 export function renderPlant(plants){
+
+    const clickCard = document.createElement('label');
+    clickCard.setAttribute('name', 'click-card');
     //create div for the individial plant called plantCard containing the three plant specs
     const plantCard = document.createElement('div');
     plantCard.classList.add('plant-card');
@@ -14,8 +17,22 @@ export function renderPlant(plants){
     //add plant name and care level to header to div
     const plantHeader = document.createElement('h2');
     plantHeader.textContent = plants['common-name'];
-    const plantHeader2 = document.createElement('h2');
-    plantHeader2.textContent = 'Care level: ' + plants['care-level'];
+    const plantHeader2 = document.createElement('h3');
+
+    switch (plants['care-level']) {
+        case 1:
+            plantHeader2.textContent = 'Care level: easiest';
+            break;
+        case 2:
+            plantHeader2.textContent = 'Care level: easier';
+            break;
+        case 3: 
+            plantHeader2.textContent = 'Care level: easy';
+            break;
+        default: 
+            plantHeader2.textContent = `Care level: ${plants['care-level']}`;
+            break;
+    }
     
     //add plant image to div
     //plants.img needs to be changed to bracket notation
@@ -25,20 +42,16 @@ export function renderPlant(plants){
 
     //add an add plant checkbox to div
     const addCheck = document.createElement('input');
+    addCheck.setAttribute('name', 'click-card');
     addCheck.setAttribute('type', 'checkbox');
     addCheck.textContent = 'Pick Plant';
     addCheck.id = plants['id'];
     addCheck.classList.add('add-check');
     addCheck.classList.add('hidden');
 
-    /*
-    const addButton = document.createElement('button');
-    addButton.textContent = 'Pick Plant';
-    addButton.id = plant.id;
-    addButton.classList.add('add-button');
-    */
-
     //append all the above to the div called plantCard
-    plantCard.append(plantHeader, addCheck, img, plantHeader2);
+    clickCard.append(plantHeader, addCheck, img, plantHeader2);
+    plantCard.append(clickCard);
+    
     return plantCard;
 }

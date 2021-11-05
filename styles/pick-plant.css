@@ -1,86 +1,11 @@
 /* add pick-plant/... page styles here */
 
-/* COLOR PALETTE 1 - uncomment for swapping palette  */
-
-:root { 
-    --lighter: #EFF1F3;
-    --light: #74A27C;
-    --med: #D8B4A0;
-    --dark: #523C2C;
-    --darker: #0D4315;
-
-    --forest-green-crayola: #74a27cff;
-    --forest-green-traditional: #0d4315ff;
-    --cultured: #eff1f3ff;
-    --cafe-noir: #523c2cff;
-    --desert-sand: #d4b4a0ff;
-}
-
-/* COLOR PALETTE 2 - uncomment for swapping palette */
-
-/* :root { 
-    --lighter: #EFF1F3
-    --light: #BA7043
-    --med: #99A69A
-    --dark: #523C2C
-    --darker: #0D4315
-
-    --cultured: #EFF1F3
-    --brown-sugar: #BA7043
-    --morning-blue: #99A69A
-    --cafe-noir: #523C2C
-    --forest-green-traditional: #0D4315
-} */
-
-
 @media only screen and (min-width: 320px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: top;
-        align-items: center;
-        background-color: var(--light);
-    }
 
-    p {
-        font-family: 'Source Sans Pro', sans-serif;
-    }
-
-    img {
-        width: 70%;
-        border: 3px solid var(--light);
-        border-radius: 10px;
-    }
-
-    button {
-        margin: auto;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 200;
-        border: none;
-        border-radius: 3px;
-        padding: 2.8%;
-        font-size: 80%;
-        width: 30%;
-        background-color: var(--darker);
-        color: var(--lighter);
-        margin-bottom: 2%;
-        margin-top: 5%;
-    }
-
-    footer > h2 {
-        font-size: 80%;
-    }
-    
-    .plant-card {
-        overflow-wrap: anywhere;
-        width: 40%;
-        font-family: 'Source Sans Pro', sans-serif;
-        background-color: var(--lighter);
-        border-radius: 20px;
-    }
-    
-    .plant-card > h2 {
-        font-size: 80%;
+    #app-name {
+        width: 60%;
+        padding-right: 5%;
+        margin: 0;
     }
 
     #render-plants {
@@ -91,18 +16,78 @@
         background-color: var(--med);
         padding: 10px;
     }
-}
-
-@media only screen and (min-width: 600px) {
-    * {
-        border: 1px solid blue;
+    
+    .plant-card {
+        overflow-wrap: anywhere;
+        width: 40%;
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: var(--lighter);
+        border-radius: 20px;
+    }
+    
+    label[name="click-card"] > h2 {
+        color: var(--dark);
+        font-size: 80%;
+        font-weight: 600;
     }
 
+    label[name="click-card"] > h3 {
+        color: var(--dark);
+        font-size: 90%;
+        font-weight: 600;
+    }
+
+    label[name="click-card"] > img {
+        width: 70%;
+        border: 3px solid var(--light);
+        border-radius: 10px;
+    }
+    
     body {
         display: flex;
         flex-direction: column;
         justify-content: top;
         align-items: center;
+        background-color: var(--light);
+    }
+
+    p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 800;
+        font-size: 5vw;
+        margin-top: 0;
+    }
+
+    button {
+        margin: auto;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+        border: none;
+        border-radius: 3px;
+        padding: 3%;
+        font-size: 80%;
+        width: 40%;
+        background-color: var(--darker);
+        color: var(--lighter);
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+
+    footer > h2 {
+        font-size: 80%;
+    }
+
+    input[type=checkbox]:checked + img {
+        border: 3px solid var(--dark);
+        border-radius: 10%;
+        background-color:white;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    * {
+        border: 1px solid blue;
     }
 }
 
@@ -112,10 +97,4 @@
         border: 1px solid red;
     }
 
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: top;
-        align-items: center;
-    }
 } 
