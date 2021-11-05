@@ -18,7 +18,21 @@ export function renderPlant(plants){
     const plantHeader = document.createElement('h2');
     plantHeader.textContent = plants['common-name'];
     const plantHeader2 = document.createElement('h3');
-    plantHeader2.textContent = 'Care level: ' + plants['care-level'];
+
+    switch (plants['care-level']) {
+        case 1:
+            plantHeader2.textContent = 'Care level: easiest';
+            break;
+        case 2:
+            plantHeader2.textContent = 'Care level: easier';
+            break;
+        case 3: 
+            plantHeader2.textContent = 'Care level: easy';
+            break;
+        default: 
+            plantHeader2.textContent = `Care level: ${plants['care-level']}`;
+            break;
+    }
     
     //add plant image to div
     //plants.img needs to be changed to bracket notation
