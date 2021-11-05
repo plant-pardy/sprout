@@ -9,7 +9,7 @@
 export function renderPlant(plants){
 
     const clickCard = document.createElement('label');
-    clickCard.setAttribute('name', 'checked');
+    clickCard.setAttribute('name', 'click-card');
     //create div for the individial plant called plantCard containing the three plant specs
     const plantCard = document.createElement('div');
     plantCard.classList.add('plant-card');
@@ -17,7 +17,7 @@ export function renderPlant(plants){
     //add plant name and care level to header to div
     const plantHeader = document.createElement('h2');
     plantHeader.textContent = plants['common-name'];
-    const plantHeader2 = document.createElement('h2');
+    const plantHeader2 = document.createElement('h3');
     plantHeader2.textContent = 'Care level: ' + plants['care-level'];
     
     //add plant image to div
@@ -28,24 +28,16 @@ export function renderPlant(plants){
 
     //add an add plant checkbox to div
     const addCheck = document.createElement('input');
-    addCheck.setAttribute('name', 'checked');
+    addCheck.setAttribute('name', 'click-card');
     addCheck.setAttribute('type', 'checkbox');
     addCheck.textContent = 'Pick Plant';
     addCheck.id = plants['id'];
     addCheck.classList.add('add-check');
     addCheck.classList.add('hidden');
 
-    /*
-    const addButton = document.createElement('button');
-    addButton.textContent = 'Pick Plant';
-    addButton.id = plant.id;
-    addButton.classList.add('add-button');
-    */
-
     //append all the above to the div called plantCard
     clickCard.append(plantHeader, addCheck, img, plantHeader2);
-    //clickCard.append(plantCard);
     plantCard.append(clickCard);
+    
     return plantCard;
-     //return clickCard;
 }

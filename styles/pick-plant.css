@@ -5,6 +5,7 @@
     #app-name {
         width: 60%;
         padding-right: 5%;
+        margin: 0;
     }
 
     #render-plants {
@@ -24,16 +25,22 @@
         border-radius: 20px;
     }
     
-    .plant-card > h2 {
-        color: var(--dark);
-        font-size: 70%;
-        font-weight: 700;
-    }
-
-    .plant-card > h3 {
+    label[name="click-card"] > h2 {
         color: var(--dark);
         font-size: 80%;
         font-weight: 600;
+    }
+
+    label[name="click-card"] > h3 {
+        color: var(--dark);
+        font-size: 90%;
+        font-weight: 600;
+    }
+
+    label[name="click-card"] > img {
+        width: 70%;
+        border: 3px solid var(--light);
+        border-radius: 10px;
     }
     
     body {
@@ -51,12 +58,6 @@
         margin-top: 0;
     }
 
-    img {
-        width: 70%;
-        border: 3px solid var(--light);
-        border-radius: 10px;
-    }
-
     button {
         margin: auto;
         font-family: 'Source Sans Pro', sans-serif;
@@ -68,15 +69,11 @@
         width: 40%;
         background-color: var(--darker);
         color: var(--lighter);
-        margin-bottom: 2%;
-        margin-top: 5%;
+        margin-bottom: 4%;
+        margin-top: 4%;
     }
 
     footer > h2 {
-        font-size: 80%;
-    }
-    
-    label > h2 {
         font-size: 80%;
     }
 
