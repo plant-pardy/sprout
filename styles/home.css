@@ -39,7 +39,7 @@
         flex-direction: column;
         justify-content: top;
         align-items: center;
-        margin: 15%;
+        margin: 5%;
         background-color: var(--light);
         color: var(--lighter);
     }
@@ -79,7 +79,7 @@
         
     p {
         width: 250px;
-        margin: 20px 0px 20px 0px;
+        margin: 00px 0px 20px 0px;
     }
 
     button {
@@ -93,12 +93,17 @@
         font-size: 80%;
         width: 50%;
     }
+
+    #app-name {
+        width: 100%;
+        padding-right: 5%;
+    }
     
     #pick-plants {
         background-color: var(--darker);
         color: var(--lighter);
         margin-bottom: 2%;
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     #plant-info {
