@@ -1,6 +1,4 @@
-/* add pick-plant/... page styles here */
-
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) { /* Smartphone styling */
 
     #app-name {
         width: 60%;
@@ -42,6 +40,12 @@
         border: 3px solid var(--light);
         border-radius: 10px;
     }
+
+    input[type=checkbox]:checked + img {
+        border: 5px solid var(--dark);
+        border-radius: 10px;
+        background-color:white;
+    }
     
     body {
         display: flex;
@@ -59,14 +63,14 @@
     }
 
     button {
-        margin: auto;
+        margin: 3%;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 600;
         border: none;
         border-radius: 3px;
         padding: 3%;
-        font-size: 80%;
-        width: 40%;
+        font-size: 75%;
+        width: 30%;
         background-color: var(--darker);
         color: var(--lighter);
         margin-bottom: 4%;
@@ -76,25 +80,37 @@
     footer > h2 {
         font-size: 80%;
     }
-
-    input[type=checkbox]:checked + img {
-        border: 3px solid var(--dark);
-        border-radius: 10%;
-        background-color:white;
-    }
 }
 
-
-@media only screen and (min-width: 600px) {
-    * {
-        border: 1px solid blue;
-    }
-}
-
-  /* For desktop: */
-@media only screen and (min-width: 768px) {
-    * {
-        border: 1px solid red;
+@media only screen and (min-width: 768px) { /* Desktop/tablet styling */
+    #app-name {
+        max-width: 300px;
     }
 
+    #render-plants {
+        gap: 20px;
+    }
+
+    #social > img {
+        max-width: 50px;
+        padding: 0.3%;
+    }
+
+    .plant-card {
+        width: 20%;
+    }
+
+    p {
+        font-size: 150%;
+        text-align: center;
+    }
+
+    button {
+        font-size: 100%;
+        width: 20%;
+        padding: 1%;
+        max-width: 210px;
+        max-height: 80px;
+        margin: 2%;
+    }
 } 
