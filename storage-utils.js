@@ -8,10 +8,20 @@ export function findById(items, id){
 
 export function setPlants(plantObject){
     const plantString = JSON.stringify(plantObject);
-    return localStorage.setItem('PLANTS', plantString);
+    localStorage.setItem('PLANTS', plantString);
 }
 
 export function getPlants(){
     const plantString = localStorage.getItem('PLANTS');
     return JSON.parse(plantString);
+}
+
+export function setSortBy(selectedIndex){
+    const sortString = JSON.stringify(selectedIndex);
+    sessionStorage.setItem('SORTBY', sortString);
+}
+
+export function getSortBy(){
+    const sortString = sessionStorage.getItem('SORTBY');
+    return JSON.parse(sortString);
 }

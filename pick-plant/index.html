@@ -19,9 +19,9 @@
     <header>
         <a href="../"><img src="../assets/sprout-logo-white.png" id="app-name"></a>
         <p>select up to 3 plants</p>
-        <label for="sort-select">sort by:</label>
-        <select name="sort-select" id="sort-select" onchange="self.location=self.location+'?idx='+this.selected">
-            <option value="care-level-a" selected="selected">Care level: ascending</option>
+        <label class="hidden" for="sort-select">sort by:</label>
+        <select class="hidden" name="sort-select" id="sort-select" onchange="self.location='./' + '?sortby=' + selectedIndex">
+            <option value="care-level-a">Care level: ascending</option>
             <option value="care-level-d">Care level: descending</option>
             <option value="alphabetical-a">Alphabetical: A -> Z</option>
             <option value="alphabetical-d">Alpabetical: Z -> A</option>
