@@ -1,4 +1,5 @@
 import plants from '../plant-data.js';
+import * as sort from '../sort-plants.js';
 import { renderPlant } from './render-plant.js';
 import { setPlants, findById } from '../storage-utils.js';
 
