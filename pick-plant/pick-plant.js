@@ -3,14 +3,13 @@ import * as sort from '../sort-plants.js';
 import { renderPlant } from './render-plant.js';
 import { setPlants, findById } from '../storage-utils.js';
 
+const sortSelect = document.getElementById('sort-select');
 const renderPlants = document.getElementById('render-plants');
 const submit = document.getElementById('submit');
 
 let userPlants = [];
 
-plants.sort(function(a, b) {
-    return a['care-level'] - b['care-level'];
-});
+sort.sortAlphaDescending(plants);
 
 plants.forEach(plant => {
     const newCard = renderPlant(plant);

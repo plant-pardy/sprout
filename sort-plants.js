@@ -1,12 +1,16 @@
 export function sortAlphaAscending(plants) {
     plants.sort(function(a, b) {
-        return a['common-name'] - b['common-name'];
+        let x = a['common-name'].toUpperCase(),
+            y = b['common-name'].toUpperCase();
+        return x === y ? 0 : x > y ? 1 : -1;
     });
 }
 
 export function sortAlphaDescending(plants) {
     plants.sort(function(a, b) {
-        return b['common-name'] - a['common-name'];
+        let x = a['common-name'].toUpperCase(),
+            y = b['common-name'].toUpperCase();
+        return y === x ? 0 : y > x ? 1 : -1;
     });
 }
 
