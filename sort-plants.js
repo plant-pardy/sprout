@@ -1,8 +1,6 @@
-//  import plants from './plant-data.js'
-// import findById ?
+// import plants from './plant-data.js';
 
-// create array to be sorted
-// const plantData = ['easy', 'easier', 'easiest'];
+
 
 // sort by value -- pass through array to get value (care-level) used for sorting into the temporary array
 // const mapped = plantData.map((id, plants) => {

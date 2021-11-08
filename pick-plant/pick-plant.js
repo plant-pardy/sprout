@@ -7,6 +7,10 @@ const submit = document.getElementById('submit');
 
 let userPlants = [];
 
+plants.sort(function(a, b) {
+    return a['care-level'] - b['care-level'];
+});
+
 plants.forEach(plant => {
     const newCard = renderPlant(plant);
     renderPlants.append(newCard);
