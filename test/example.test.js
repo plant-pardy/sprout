@@ -1,4 +1,4 @@
-import { findById, getPlants, setPlants } from '../storage-utils.js';
+import { findById, getPlants, setPlants, getSortBy, setSortBy } from '../storage-utils.js';
 import plants from '../plant-data.js';
 import { renderPlant } from '../pick-plant/render-plant.js';
 import { renderInfo } from '../plant-info/render-plant-info.js';
@@ -52,6 +52,7 @@ test('setPlants should save plant objects into local storage', (expect) => {
 test('getPlants should return plant objects from local storage', (expect) => {
     const plantObject = {
         'id': 1,
+        'img': './assets/plant-images/monstera-deliciosa.jpg',
         'common-name': 'Swiss Cheese plant',
         'genus': 'Monstera  Deliciosa',
         'care-level': '3',
@@ -66,7 +67,7 @@ test('getPlants should return plant objects from local storage', (expect) => {
         'propagation': 'Yes',
         'toxicity': 'Toxic to cats and dogs ',
     };
-    setPlants(plantObject);
+    localStorage.setItem('PLANTS', JSON.stringify(plantObject));
     const actual = getPlants();
     expect.deepEqual(actual, plantObject);
 });
@@ -100,3 +101,22 @@ test('renderInfo should return an HTML snippet', (expect) => {
 
     expect.deepEqual(actual, expected);
 });
+
+test('getSortBy should retrieve an item in sessionStorage', (expect) => {
+    const sortObject = 'Sorting method string';
+    sessionStorage.setItem('SORTBY', JSON.stringify(sortObject));
+    const actual = getSortBy();
+    expect.deepEqual(actual, sortObject);
+});
+
+test('setSortBy should write an item to sessionStorage', (expect) => {
+    sessionStorage.removeItem('SORTBY');
+    
+    const expected = 'Sorting method string';
+    setSortBy(expected);
+
+    const actualString = sessionStorage.getItem('SORTBY');
+    const actual = JSON.parse(actualString);
+    expect.deepEqual(actual, expected);
+});
+
