@@ -1,4 +1,4 @@
-export function sortAlphaAscending(plants) {
+export function alphaAscending(plants) {
     plants.sort(function(a, b) {
         let x = a['common-name'].toUpperCase(),
             y = b['common-name'].toUpperCase();
@@ -6,7 +6,7 @@ export function sortAlphaAscending(plants) {
     });
 }
 
-export function sortAlphaDescending(plants) {
+export function alphaDescending(plants) {
     plants.sort(function(a, b) {
         let x = a['common-name'].toUpperCase(),
             y = b['common-name'].toUpperCase();
@@ -14,13 +14,13 @@ export function sortAlphaDescending(plants) {
     });
 }
 
-export function sortCareLevelAscending(plants) {
+export function careLevelAscending(plants) {
     plants.sort(function(a, b) {
         return a['care-level'] - b['care-level'];
     });
 }
 
-export function sortCareLevelDescending(plants) {
+export function careLevelDescending(plants) {
     plants.sort(function(a, b) {
         return b['care-level'] - a['care-level'];
     });

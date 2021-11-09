@@ -14,24 +14,24 @@ if (sortOrder) {
     switch (sortOrder) {
         case 1: 
             sortSelect.selectedIndex = 1; 
-            sort.sortAlphaAscending(plants);
-            sort.sortCareLevelAscending(plants);
+            sort.alphaAscending(plants);
+            sort.careLevelAscending(plants);
             break;
         case 2: 
             sortSelect.selectedIndex = 2; 
-            sort.sortAlphaAscending(plants);
-            sort.sortCareLevelDescending(plants);
+            sort.alphaAscending(plants);
+            sort.careLevelDescending(plants);
             break;
         case 3: 
             sortSelect.selectedIndex = 3; 
-            sort.sortAlphaAscending(plants);
+            sort.alphaAscending(plants);
             break;
         case 4: 
             sortSelect.selectedIndex = 4; 
-            sort.sortAlphaDescending(plants);
+            sort.alphaDescending(plants);
             break;
         default: 
-            sort.sortAlphaAscending(plants);
+            sort.alphaAscending(plants);
             break;
     }
 }

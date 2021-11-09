@@ -1,1 +1,2 @@
-import './example.test.js';
+import './render.test.js';
+import './storage.test.js';
