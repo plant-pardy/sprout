@@ -92,12 +92,12 @@
 
 @media only screen and (min-width: 768px) {
     #app-name {
-        max-width: 768px;
+        max-width: 600px;
     }
 
     #about {
         width: 100%;
-        font-size: 200%;
+        font-size: 180%;
     }
 
     #social > img {

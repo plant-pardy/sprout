@@ -13,6 +13,8 @@
         gap: 10px;
         background-color: var(--med);
         padding: 10px;
+        width: 100vw;
+        min-height: 100vh;
     }
     
     .plant-card {
